@@ -11,6 +11,7 @@
 3. Place it in {SYNTH} skins directory:
    - Windows: `%APPDATA%\The Usual Suspects\{SYNTH}\skins\`
    - macOS: `~/Library/Application Support/The Usual Suspects/{SYNTH}/skins/`
+     *(or sometimes `~/Documents/The Usual Suspects/{SYNTH}/skins/`)*
 4. Select **Simpless** in skin menu
 
 ## Screenshots
@@ -40,6 +41,7 @@
 3. Положите в директорию скинов {SYNTH}:
    - Windows: `%APPDATA%\The Usual Suspects\{SYNTH}\skins\`
    - macOS: `~/Library/Application Support/The Usual Suspects/{SYNTH}/skins/`
+     *(иногда `~/Documents/The Usual Suspects/{SYNTH}/skins/`)*
 4. В меню скинов выберите **Simpless**
 
 ## Скриншоты
