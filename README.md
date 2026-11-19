@@ -6,68 +6,68 @@
 
 ---
 
-**Simpless** — это минималистичный скин для синтезаторов в стиле **The Usual Suspects** (Xenia и др.).
+**Simples** is a minimal skin for modular synthesizers in the **The Usual Suspects** (Xenia and others) style.
 
-Дизайн: мягкие rounded-панели на тёмном фоне, muted copper-orange акценты (цвет Xenia hardware), cream текст, красный акцент.
-Создан с любовью к аудио-интерфейсам и open-source культуре.
-
----
-
-## 🎹 Для музыкантов
-
-Simpless создан музыкантом и программистом, который ценит:
-- **Чистый UI** — ничего лишнего, всё на месте
-- **Тёмную тему** — удобно работать ночью
-- **Наличие Gabarito шрифта** (SIL OFL) — читаемость и стиль
-- **Полную совместимость** с дефолтным скином синтезатора
-
-Скин меняет внешний вид интерфейса, но оставляет всё функционал на месте.
+Design: soft rounded panels on dark background, muted copper-orange accents (Xenia hardware tone), cream text, red accent.
+Created with love for audio interfaces and open-source culture.
 
 ---
 
-## 📦 Установка
+## 🎹 For Musicians
 
-1. Скачать архив `Simpless-<синтезатор>-<версия>.zip`
-2. Распаковать — внутри папка **Simpless/**
-3. Поместить в директорию скинов синтезатора:
-   - **Windows**: `%APPDATA%\The Usual Suspects\<синтезатор>\skins\`
-   - **macOS**: `~/Library/Application Support/The Usual Suspects/<синтезатор>/skins/`
-     *(или иногда `~/Documents/The Usual Suspects/<синтезатор>/skins/`)*
-4. Выбрать **Simpless** в меню скинов
+Simples was created by a musician and software developer who values:
+- **Clean UI** — nothing extra, everything in its place
+- **Dark theme** — comfortable for night sessions
+- **Gabarito font** (SIL OFL) — readability and style
+- **Full compatibility** with the synthesizer's default skin
 
----
-
-## 📸 Скриншоты
-
-Скриншоты из релизов доступны в соответствующем `release/<синтезатор>/`.
+The skin changes the look of the interface, but keeps all functionality intact.
 
 ---
 
-## 🛠 Для разработчиков
+## 📦 Installation
 
-- Исходные файлы скинов лежат в папке `release/<синтезатор>/`
-- Скрипт сборки: `scripts/build_zip.py`
-- Маппинг синтезаторов: `.github/synth-map.yml`
-- Workflow релиза: `.github/workflows/release.yml`
-- Тег формата: `<synth>/v<version>` (например, `xenia/v0.1.0`)
+1. Download the archive `Simples-<synth>-<version>.zip`
+2. Unzip — you get the folder **Simples/**
+3. Place it in the synthesizer's skins directory:
+   - **Windows**: `%APPDATA%\The Usual Suspects\<synth>\skins\`
+   - **macOS**: `~/Library/Application Support/The Usual Suspects/<synth>/skins/`
+     *(or sometimes `~/Documents/The Usual Suspects/<synth>/skins/`)`
+4. Select **Simples** in the skin menu
 
 ---
 
-## 💖 Поддержка
+## 📸 Screenshots
 
-Если вам нравится эта работа, можете поддержать разработчика:
+Screenshots from releases are available in the corresponding `release/<synth>/` folder.
+
+---
+
+## 🛠 For Developers
+
+- Source skin files live in the `release/<synth>/` folder
+- Build script: `scripts/build_zip.py`
+- Synth mapping: `.github/synth-map.yml`
+- Release workflow: `.github/workflows/release.yml`
+- Tag format: `<synth>/v<version>` (e.g., `xenia/v0.1.0`)
+
+---
+
+## 💖 Support
+
+If you like this work, you can support the developer:
 
 [![GitHub Sponsor](https://img.shields.io/badge/Support%20via%20GitHub%20Sponsor-%231DA1F2?logo=github-sponsors)](https://github.com/sponsors/vitzen)
 
 ---
 
-## 📜 Лицензия
+## 📜 License
 
-MIT — свободно, но с указанием авторства.
+MIT — free, but with attribution.
 
 ---
 
-## 👤 Автор
+## 👤 Author
 
-**Vitalii Zenkov (KYOTO)** — full-stack developer и музыкант.
+**Vitalii Zenkov (KYOTO)** — full-stack developer and musician.
 GitHub: [@vitzen](https://github.com/vitzen)
