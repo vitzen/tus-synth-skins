@@ -108,19 +108,16 @@ jobs:
           fi
 
           # Build markdown for screenshots section
-          IMG_BLOCK="
-## Screenshots
-
-"
+          IMG_BLOCK=$'\n## Screenshots\n'
           while IFS= read -r url; do
             FILENAME=$(basename "$url")
-            IMG_BLOCK="${IMG_BLOCK}![${FILENAME}](${url})\n"
+            IMG_BLOCK="${IMG_BLOCK}"$'\n'"![${FILENAME}](${url})"
           done <<< "$SCREENSHOT_URLS"
 
           # Read current body, append screenshots
           cp /tmp/release_body.md /tmp/release_body_final.md
           sed -i '/<!--.*screenshots.*-->/Id' /tmp/release_body_final.md
-          echo -e "\n${IMG_BLOCK}" >> /tmp/release_body_final.md
+          printf '%s\n%s\n' "$(cat /tmp/release_body_final.md)" "$IMG_BLOCK" > /tmp/release_body_final.md
 
           # Update release body
           BODY_JSON=$(python3 -c "import json,sys; print(json.dumps({'body': open('/tmp/release_body_final.md').read()}))")
