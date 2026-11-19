@@ -86,6 +86,7 @@ jobs:
           SYNTH="${{ steps.parse_tag.outputs.synth }}"
           RELEASE_ID="${{ steps.create_release.outputs.release_id }}"
           REPO="${{ github.repository }}"
+          TAG="${{ github.ref_name }}"
           SCREENSHOT_DIR="release/${SYNTH}/screenshots"
 
           if [[ ! -d "$SCREENSHOT_DIR" ]]; then
@@ -93,51 +94,43 @@ jobs:
             exit 0
           fi
 
-          SCREENSHOT_MD=""
-          for file in "$SCREENSHOT_DIR"/*; do
-            [[ -f "$file" ]] || continue
-            FILENAME=$(basename "$file")
-            echo "Uploading: $FILENAME"
+          # Upload all screenshots as assets
+          echo "Uploading screenshots via gh CLI..."
+          gh release upload "${TAG}" "${SCREENSHOT_DIR}"/* --clobber --repo "${REPO}"
 
-            UPLOAD_RESPONSE=$(curl -s -X POST \
-              -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-              -H "Accept: application/vnd.github+json" \
-              -H "Content-Type: $(file --mime-type -b "$file")" \
-              --data-binary @"$file" \
-              "https://uploads.github.com/repos/${REPO}/releases/${RELEASE_ID}/assets?name=${FILENAME}")
+          # Get asset URLs from release API
+          SCREENSHOT_URLS=$(gh api "repos/${REPO}/releases/${RELEASE_ID}" \
+            --jq '.assets[] | select(.name | test("\\.(png|jpg|jpeg|gif)$")) | .browser_download_url')
 
-            ASSET_URL=$(echo "$UPLOAD_RESPONSE" | grep -o '"browser_download_url": *"[^"]*"' | head -1 | sed 's/.*"\([^"]*\)"/\1/')
-
-            if [[ -z "$ASSET_URL" ]]; then
-              echo "::error::Failed to upload $FILENAME"
-              echo "$UPLOAD_RESPONSE"
-              exit 1
-            fi
-
-            echo "Uploaded: $FILENAME -> $ASSET_URL"
-            SCREENSHOT_MD="${SCREENSHOT_MD}\n![${FILENAME}](${ASSET_URL})"
-          done
-
-          if [[ -n "$SCREENSHOT_MD" ]]; then
-            # Insert screenshots after the body text, before any existing screenshots comment
-            IMG_BLOCK="\n## Screenshots\n${SCREENSHOT_MD}\n"
-
-            # Read current body
-            cp /tmp/release_body.md /tmp/release_body_final.md
-
-            # Remove any existing screenshots comment
-            sed -i '/<!--.*screenshots.*-->/Id' /tmp/release_body_final.md
-
-            # Append screenshots section
-            echo -e "$IMG_BLOCK" >> /tmp/release_body_final.md
-
-            # Update release body
-            curl -s -X PATCH \
-              -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-              -H "Accept: application/vnd.github+json" \
-              -H "Content-Type: application/json" \
-              -d "$(python3 -c "import json,sys; print(json.dumps({'body': open('/tmp/release_body_final.md').read()}))")" \
-              "https://api.github.com/repos/${REPO}/releases/${RELEASE_ID}"
-
-            echo "Release body updated with screenshots"
+          if [[ -z "$SCREENSHOT_URLS" ]]; then
+            echo "No screenshot assets found, skipping body update"
+            exit 0
           fi
+
+          # Build markdown for screenshots section
+          IMG_BLOCK="
+## Screenshots
+
+"
+          while IFS= read -r url; do
+            FILENAME=$(basename "$url")
+            IMG_BLOCK="${IMG_BLOCK}![${FILENAME}](${url})\n"
+          done <<< "$SCREENSHOT_URLS"
+
+          # Read current body, append screenshots
+          cp /tmp/release_body.md /tmp/release_body_final.md
+          sed -i '/<!--.*screenshots.*-->/Id' /tmp/release_body_final.md
+          echo -e "\n${IMG_BLOCK}" >> /tmp/release_body_final.md
+
+          # Update release body
+          BODY_JSON=$(python3 -c "import json,sys; print(json.dumps({'body': open('/tmp/release_body_final.md').read()}))")
+          curl -s -X PATCH \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            -H "Content-Type: application/json" \
+            -d "${BODY_JSON}" \
+            "https://api.github.com/repos/${REPO}/releases/${RELEASE_ID}"
+
+          echo "Release body updated with screenshots"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
