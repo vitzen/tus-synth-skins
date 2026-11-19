@@ -21,6 +21,7 @@
 - —
 
 ## Credits
+- Skin author: {AUTHOR}
 - Gabarito font (SIL OFL)
 - Inspired by: Tatsu Ishikawa, xtB Orange skin
 
@@ -51,5 +52,6 @@
 - —
 
 ## Благодарности
+- Автор скина: {AUTHOR}
 - Шрифт Gabarito (SIL OFL)
 - Вдохновлено: Tatsu Ishikawa, xtB Orange skin
