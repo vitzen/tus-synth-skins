@@ -66,19 +66,6 @@ jobs:
             echo "_No release notes provided._" >> /tmp/release_body.md
           fi
 
-      - name: Resize screenshots
-        id: resize_screenshots
-        run: |
-          SYNTH="${{ steps.parse_tag.outputs.synth }}"
-          SCREENSHOT_DIR="release/${SYNTH}/screenshots"
-          if [[ -d "$SCREENSHOT_DIR" ]]; then
-            for file in "$SCREENSHOT_DIR"/*; do
-              [[ -f "$file" ]] || continue
-              convert "$file" -resize 1280x "$file"
-              echo "Resized: $(basename "$file")"
-            done
-          fi
-
       - name: Embed screenshots into release body
         id: embed_screenshots
         run: |
@@ -94,8 +81,8 @@ jobs:
                   path = os.path.join(screenshot_dir, name)
                   if os.path.isfile(path):
                       url = f"https://github.com/{repo}/blob/{sha}/{screenshot_dir}/{name}?raw=true"
-                      lines.append(f"![{name}]({url})")
-          img_md = "\n".join(lines)
+                      lines.append(f'<img src="{url}" alt="{name}" width="800" />')
+          img_md = "\n\n".join(lines)
           with open('/tmp/release_body.md') as f:
               body = f.read()
           if lines:
