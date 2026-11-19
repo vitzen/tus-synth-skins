@@ -43,16 +43,6 @@ Screenshots from releases are available in the corresponding `release/<synth>/` 
 
 ---
 
-## 🛠 For Developers
-
-- Source skin files live in the `release/<synth>/` folder
-- Build script: `scripts/build_zip.py`
-- Synth mapping: `.github/synth-map.yml`
-- Release workflow: `.github/workflows/release.yml`
-- Tag format: `<synth>/v<version>` (e.g., `xenia/v0.1.0`)
-
----
-
 ## 💖 Support
 
 If you like this work, you can support the developer:
@@ -61,13 +51,14 @@ If you like this work, you can support the developer:
 
 ---
 
-## 📜 License
-
-MIT — free, but with attribution.
-
----
-
 ## 👤 Author
 
 **Vitalii Zenkov (KYOTO)** — full-stack developer and musician.
-GitHub: [@vitzen](https://github.com/vitzen)
+
+- GitHub: [@vitzen](https://github.com/vitzen)
+- Telegram: [@kyotosound](https://t.me/kyotosound)
+- Facebook: [kyotosound](https://www.facebook.com/kyotosound/)
+- SoundCloud: [kyotosound](https://soundcloud.com/kyotosound)
+- Mixcloud: [kyotosound](https://www.mixcloud.com/kyotosound/)
+- YouTube: [@vitalii_kyoto](https://www.youtube.com/@vitalii_kyoto)
+- Email: kyotochillout@gmail.com
