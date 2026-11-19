@@ -80,7 +80,7 @@ jobs:
               for name in sorted(os.listdir(screenshot_dir)):
                   path = os.path.join(screenshot_dir, name)
                   if os.path.isfile(path):
-                      url = f"https://raw.githubusercontent.com/{repo}/{sha}/{screenshot_dir}/{name}"
+                      url = f"https://github.com/{repo}/blob/{sha}/{screenshot_dir}/{name}?raw=true"
                       lines.append(f"![{name}]({url})")
           img_md = "\n".join(lines)
           with open('/tmp/release_body.md') as f:
