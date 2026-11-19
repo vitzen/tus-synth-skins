@@ -93,10 +93,10 @@ jobs:
               cells = []
               for name in row_files:
                   url = f"https://github.com/{repo}/blob/{sha}/{screenshot_dir}/{name}?raw=true"
-                  cells.append(f'<td align="center"><img src="{url}" alt="{name}" width="500" /></td>')
+                  cells.append(f'<td align="center" style="border: 0; padding: 8px;"><img src="{url}" alt="{name}" width="500" /></td>')
               rows.append("<tr>" + "".join(cells) + "</tr>")
 
-          img_md = "<table>\n" + "\n".join(rows) + "\n</table>"
+          img_md = '<table style="border-collapse: collapse; border: 0;">\n' + "\n".join(rows) + "\n</table>"
 
           with open('/tmp/release_body.md') as f:
               body = f.read()
