@@ -66,6 +66,35 @@ jobs:
             echo "_No release notes provided._" >> /tmp/release_body.md
           fi
 
+      - name: Embed screenshots into release body
+        id: embed_screenshots
+        run: |
+          python3 - <<'PYEOF'
+          import os, re
+          synth = os.environ.get("SYNTH", "${{ steps.parse_tag.outputs.synth }}")
+          repo = os.environ.get("REPO", "${{ github.repository }}")
+          sha = os.environ.get("SHA", "${{ github.sha }}")
+          screenshot_dir = f"release/{synth}/screenshots"
+          lines = []
+          if os.path.isdir(screenshot_dir):
+              for name in sorted(os.listdir(screenshot_dir)):
+                  path = os.path.join(screenshot_dir, name)
+                  if os.path.isfile(path):
+                      url = f"https://raw.githubusercontent.com/{repo}/{sha}/{screenshot_dir}/{name}"
+                      lines.append(f"![{name}]({url})")
+          img_md = "\n".join(lines)
+          with open('/tmp/release_body.md') as f:
+              body = f.read()
+          if lines:
+              body = re.sub(r'<!--.*?-->', img_md, body, count=1, flags=re.DOTALL)
+          with open('/tmp/release_body.md', 'w') as f:
+              f.write(body)
+          print(f"Embedded {len(lines)} screenshots into release body")
+        env:
+          SYNTH: ${{ steps.parse_tag.outputs.synth }}
+          REPO: ${{ github.repository }}
+          SHA: ${{ github.sha }}
+
       - name: Create Release
         id: create_release
         uses: softprops/action-gh-release@v1
@@ -79,55 +108,3 @@ jobs:
           prerelease: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Upload screenshots as assets and update release body
-        id: upload_screenshots
-        run: |
-          SYNTH="${{ steps.parse_tag.outputs.synth }}"
-          RELEASE_ID="${{ steps.create_release.outputs.release_id }}"
-          REPO="${{ github.repository }}"
-          TAG="${{ github.ref_name }}"
-          SCREENSHOT_DIR="release/${SYNTH}/screenshots"
-
-          if [[ ! -d "$SCREENSHOT_DIR" ]]; then
-            echo "No screenshots directory, skipping"
-            exit 0
-          fi
-
-          # Upload all screenshots as assets
-          echo "Uploading screenshots via gh CLI..."
-          gh release upload "${TAG}" "${SCREENSHOT_DIR}"/* --clobber --repo "${REPO}"
-
-          # Get asset URLs from release API
-          SCREENSHOT_URLS=$(gh api "repos/${REPO}/releases/${RELEASE_ID}" \
-            --jq '.assets[] | select(.name | test("\\.(png|jpg|jpeg|gif)$")) | .browser_download_url')
-
-          if [[ -z "$SCREENSHOT_URLS" ]]; then
-            echo "No screenshot assets found, skipping body update"
-            exit 0
-          fi
-
-          # Build markdown for screenshots section
-          IMG_BLOCK=$'\n## Screenshots\n'
-          while IFS= read -r url; do
-            FILENAME=$(basename "$url")
-            IMG_BLOCK="${IMG_BLOCK}"$'\n'"![${FILENAME}](${url})"
-          done <<< "$SCREENSHOT_URLS"
-
-          # Read current body, append screenshots
-          cp /tmp/release_body.md /tmp/release_body_final.md
-          sed -i '/<!--.*screenshots.*-->/Id' /tmp/release_body_final.md
-          printf '%s\n%s\n' "$(cat /tmp/release_body_final.md)" "$IMG_BLOCK" > /tmp/release_body_final.md
-
-          # Update release body
-          BODY_JSON=$(python3 -c "import json,sys; print(json.dumps({'body': open('/tmp/release_body_final.md').read()}))")
-          curl -s -X PATCH \
-            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-            -H "Accept: application/vnd.github+json" \
-            -H "Content-Type: application/json" \
-            -d "${BODY_JSON}" \
-            "https://api.github.com/repos/${REPO}/releases/${RELEASE_ID}"
-
-          echo "Release body updated with screenshots"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
