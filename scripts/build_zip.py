@@ -47,7 +47,11 @@ def main():
     args = parser.parse_args()
 
     zip_path = build_zip(args.source_dir, args.synth, args.version, args.output_dir)
-    # Output for GitHub Actions
+    # Output for GitHub Actions (writes to GITHUB_OUTPUT file if running in Actions)
+    github_output = os.environ.get('GITHUB_OUTPUT')
+    if github_output:
+        with open(github_output, 'a') as f:
+            f.write(f"zip_path={zip_path}\n")
     print(f"zip_path={zip_path}")
 
 
