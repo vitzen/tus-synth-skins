@@ -90,7 +90,7 @@ jobs:
           tags = []
           for name in files:
               url = f"https://github.com/{repo}/blob/{sha}/{screenshot_dir}/{name}?raw=true"
-              tags.append(f'<img src="{url}" alt="{name}" width="500" />')
+              tags.append(f'<img src="{url}" alt="{name}" width="550" />')
 
           img_md = " ".join(tags)
 
