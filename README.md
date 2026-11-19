@@ -35,7 +35,20 @@ The skin changes the look of the interface, but keeps all functionality intact.
 
 ## 📸 Screenshots
 
-Screenshots from releases are available in the corresponding `release/<synth>/` folder.
+<table>
+  <tr>
+    <td align="center"><img src="https://github.com/vitzen/tus-synth-skins/blob/main/release/xenia/screenshots/01.png?raw=true" alt="01.png" width="280" /></td>
+    <td align="center"><img src="https://github.com/vitzen/tus-synth-skins/blob/main/release/xenia/screenshots/02.png?raw=true" alt="02.png" width="280" /></td>
+    <td align="center"><img src="https://github.com/vitzen/tus-synth-skins/blob/main/release/xenia/screenshots/03.png?raw=true" alt="03.png" width="280" /></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://github.com/vitzen/tus-synth-skins/blob/main/release/xenia/screenshots/04.png?raw=true" alt="04.png" width="280" /></td>
+    <td align="center"><img src="https://github.com/vitzen/tus-synth-skins/blob/main/release/xenia/screenshots/05.png?raw=true" alt="05.png" width="280" /></td>
+    <td align="center"><img src="https://github.com/vitzen/tus-synth-skins/blob/main/release/xenia/screenshots/06.png?raw=true" alt="06.png" width="280" /></td>
+  </tr>
+</table>
+
+_Screenshots for Xenia skin (v0.1.0). More screenshots per synth in `release/<synth>/screenshots/`._
 
 ---
 
