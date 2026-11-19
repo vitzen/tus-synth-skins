@@ -17,9 +17,6 @@
 ## Screenshots
 <!-- Screenshots added automatically from release/{synth}/screenshots/ -->
 
-## Known Issues
-- —
-
 ## Credits
 - Skin author: {AUTHOR}
 - Gabarito font (SIL OFL)
