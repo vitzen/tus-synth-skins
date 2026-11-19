@@ -75,21 +75,37 @@ jobs:
           repo = os.environ.get("REPO", "${{ github.repository }}")
           sha = os.environ.get("SHA", "${{ github.sha }}")
           screenshot_dir = f"release/{synth}/screenshots"
-          lines = []
+          files = []
           if os.path.isdir(screenshot_dir):
               for name in sorted(os.listdir(screenshot_dir)):
                   path = os.path.join(screenshot_dir, name)
                   if os.path.isfile(path):
-                      url = f"https://github.com/{repo}/blob/{sha}/{screenshot_dir}/{name}?raw=true"
-                      lines.append(f'<img src="{url}" alt="{name}" width="800" />')
-          img_md = "\n\n".join(lines)
+                      files.append(name)
+
+          if not files:
+              print("No screenshots found")
+              exit(0)
+
+          # Build HTML table with 2 images per row
+          rows = []
+          for i in range(0, len(files), 2):
+              row_files = files[i:i+2]
+              cells = []
+              for name in row_files:
+                  url = f"https://github.com/{repo}/blob/{sha}/{screenshot_dir}/{name}?raw=true"
+                  cells.append(f'<td align="center"><img src="{url}" alt="{name}" width="500" /></td>')
+              rows.append("<tr>" + "".join(cells) + "</tr>")
+
+          img_md = "<table>\n" + "\n".join(rows) + "\n</table>"
+
           with open('/tmp/release_body.md') as f:
               body = f.read()
-          if lines:
-              body = re.sub(r'<!--.*?-->', img_md, body, count=1, flags=re.DOTALL)
+
+          body = re.sub(r'<!--.*?-->', img_md, body, count=1, flags=re.DOTALL)
+
           with open('/tmp/release_body.md', 'w') as f:
               f.write(body)
-          print(f"Embedded {len(lines)} screenshots into release body")
+          print(f"Embedded {len(files)} screenshots into release body")
         env:
           SYNTH: ${{ steps.parse_tag.outputs.synth }}
           REPO: ${{ github.repository }}
