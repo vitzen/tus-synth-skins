@@ -71,7 +71,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ github.ref_name }}
-          name: Simpless-${{ steps.parse_tag.outputs.synth | upper }}-${{ steps.parse_tag.outputs.version }}
+          name: Simpless-${{ steps.parse_tag.outputs.synth }}-${{ steps.parse_tag.outputs.version }}
           body_path: /tmp/release_body.md
           files: |
             ${{ steps.build_zip.outputs.zip_path }}
