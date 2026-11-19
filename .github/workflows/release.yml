@@ -66,30 +66,6 @@ jobs:
             echo "_No release notes provided._" >> /tmp/release_body.md
           fi
 
-      - name: Embed screenshots into release notes
-        run: |
-          python3 - <<'EOF'
-          import os, re
-          synth = "${{ steps.parse_tag.outputs.synth }}"
-          repo = "${{ github.repository }}"
-          sha = "${{ github.sha }}"
-          screenshot_dir = f"release/{synth}/screenshots"
-          lines = []
-          if os.path.isdir(screenshot_dir):
-              for name in sorted(os.listdir(screenshot_dir)):
-                  path = os.path.join(screenshot_dir, name)
-                  if os.path.isfile(path):
-                      url = f"https://raw.githubusercontent.com/{repo}/{sha}/{screenshot_dir}/{name}"
-                      lines.append(f"![{name}]({url})")
-          img_md = "\n".join(lines)
-          with open('/tmp/release_body.md') as f:
-              body = f.read()
-          if lines:
-              body = re.sub(r'<!--.*?-->', img_md, body, count=1, flags=re.DOTALL)
-          with open('/tmp/release_body.md', 'w') as f:
-              f.write(body)
-          EOF
-
       - name: Create Release
         id: create_release
         uses: softprops/action-gh-release@v1
@@ -103,3 +79,65 @@ jobs:
           prerelease: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload screenshots as assets and update release body
+        id: upload_screenshots
+        run: |
+          SYNTH="${{ steps.parse_tag.outputs.synth }}"
+          RELEASE_ID="${{ steps.create_release.outputs.release_id }}"
+          REPO="${{ github.repository }}"
+          SCREENSHOT_DIR="release/${SYNTH}/screenshots"
+
+          if [[ ! -d "$SCREENSHOT_DIR" ]]; then
+            echo "No screenshots directory, skipping"
+            exit 0
+          fi
+
+          SCREENSHOT_MD=""
+          for file in "$SCREENSHOT_DIR"/*; do
+            [[ -f "$file" ]] || continue
+            FILENAME=$(basename "$file")
+            echo "Uploading: $FILENAME"
+
+            UPLOAD_RESPONSE=$(curl -s -X POST \
+              -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+              -H "Accept: application/vnd.github+json" \
+              -H "Content-Type: $(file --mime-type -b "$file")" \
+              --data-binary @"$file" \
+              "https://uploads.github.com/repos/${REPO}/releases/${RELEASE_ID}/assets?name=${FILENAME}")
+
+            ASSET_URL=$(echo "$UPLOAD_RESPONSE" | grep -o '"browser_download_url": *"[^"]*"' | head -1 | sed 's/.*"\([^"]*\)"/\1/')
+
+            if [[ -z "$ASSET_URL" ]]; then
+              echo "::error::Failed to upload $FILENAME"
+              echo "$UPLOAD_RESPONSE"
+              exit 1
+            fi
+
+            echo "Uploaded: $FILENAME -> $ASSET_URL"
+            SCREENSHOT_MD="${SCREENSHOT_MD}\n![${FILENAME}](${ASSET_URL})"
+          done
+
+          if [[ -n "$SCREENSHOT_MD" ]]; then
+            # Insert screenshots after the body text, before any existing screenshots comment
+            IMG_BLOCK="\n## Screenshots\n${SCREENSHOT_MD}\n"
+
+            # Read current body
+            cp /tmp/release_body.md /tmp/release_body_final.md
+
+            # Remove any existing screenshots comment
+            sed -i '/<!--.*screenshots.*-->/Id' /tmp/release_body_final.md
+
+            # Append screenshots section
+            echo -e "$IMG_BLOCK" >> /tmp/release_body_final.md
+
+            # Update release body
+            curl -s -X PATCH \
+              -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+              -H "Accept: application/vnd.github+json" \
+              -H "Content-Type: application/json" \
+              -d "$(python3 -c "import json,sys; print(json.dumps({'body': open('/tmp/release_body_final.md').read()}))")" \
+              "https://api.github.com/repos/${REPO}/releases/${RELEASE_ID}"
+
+            echo "Release body updated with screenshots"
+          fi
