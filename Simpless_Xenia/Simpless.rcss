@@ -1,0 +1,1027 @@
+@spritesheet btBrowser
+{
+	btBrowser_active: 0px 256px 128px 128px;
+	btBrowser_checked: 0px 128px 128px 128px;
+	btBrowser_checked-active: 0px 384px 128px 128px;
+	btBrowser_checked-hover: 0px 128px 128px 128px;
+	btBrowser_default: 0px 0px 128px 128px;
+	btBrowser_hover: 0px 0px 128px 128px;
+	src: btBrowser.png;
+}
+@spritesheet kbMainBi_page0
+{
+	kbMainBi_000: 0px 0px 152px 152px;
+	kbMainBi_001: 152px 0px 152px 152px;
+	kbMainBi_002: 304px 0px 152px 152px;
+	kbMainBi_003: 456px 0px 152px 152px;
+	kbMainBi_004: 608px 0px 152px 152px;
+	kbMainBi_005: 760px 0px 152px 152px;
+	kbMainBi_006: 912px 0px 152px 152px;
+	kbMainBi_007: 1064px 0px 152px 152px;
+	kbMainBi_008: 1216px 0px 152px 152px;
+	kbMainBi_009: 1368px 0px 152px 152px;
+	kbMainBi_010: 1520px 0px 152px 152px;
+	kbMainBi_011: 1672px 0px 152px 152px;
+	kbMainBi_012: 1824px 0px 152px 152px;
+	kbMainBi_013: 0px 152px 152px 152px;
+	kbMainBi_014: 152px 152px 152px 152px;
+	kbMainBi_015: 304px 152px 152px 152px;
+	kbMainBi_016: 456px 152px 152px 152px;
+	kbMainBi_017: 608px 152px 152px 152px;
+	kbMainBi_018: 760px 152px 152px 152px;
+	kbMainBi_019: 912px 152px 152px 152px;
+	kbMainBi_020: 1064px 152px 152px 152px;
+	kbMainBi_021: 1216px 152px 152px 152px;
+	kbMainBi_022: 1368px 152px 152px 152px;
+	kbMainBi_023: 1520px 152px 152px 152px;
+	kbMainBi_024: 1672px 152px 152px 152px;
+	kbMainBi_025: 1824px 152px 152px 152px;
+	kbMainBi_026: 0px 304px 152px 152px;
+	kbMainBi_027: 152px 304px 152px 152px;
+	kbMainBi_028: 304px 304px 152px 152px;
+	kbMainBi_029: 456px 304px 152px 152px;
+	kbMainBi_030: 608px 304px 152px 152px;
+	kbMainBi_031: 760px 304px 152px 152px;
+	kbMainBi_032: 912px 304px 152px 152px;
+	kbMainBi_033: 1064px 304px 152px 152px;
+	kbMainBi_034: 1216px 304px 152px 152px;
+	kbMainBi_035: 1368px 304px 152px 152px;
+	kbMainBi_036: 1520px 304px 152px 152px;
+	kbMainBi_037: 1672px 304px 152px 152px;
+	kbMainBi_038: 1824px 304px 152px 152px;
+	kbMainBi_039: 0px 456px 152px 152px;
+	kbMainBi_040: 152px 456px 152px 152px;
+	kbMainBi_041: 304px 456px 152px 152px;
+	kbMainBi_042: 456px 456px 152px 152px;
+	kbMainBi_043: 608px 456px 152px 152px;
+	kbMainBi_044: 760px 456px 152px 152px;
+	kbMainBi_045: 912px 456px 152px 152px;
+	kbMainBi_046: 1064px 456px 152px 152px;
+	kbMainBi_047: 1216px 456px 152px 152px;
+	kbMainBi_048: 1368px 456px 152px 152px;
+	kbMainBi_049: 1520px 456px 152px 152px;
+	kbMainBi_050: 1672px 456px 152px 152px;
+	kbMainBi_051: 1824px 456px 152px 152px;
+	kbMainBi_052: 0px 608px 152px 152px;
+	kbMainBi_053: 152px 608px 152px 152px;
+	kbMainBi_054: 304px 608px 152px 152px;
+	kbMainBi_055: 456px 608px 152px 152px;
+	kbMainBi_056: 608px 608px 152px 152px;
+	kbMainBi_057: 760px 608px 152px 152px;
+	kbMainBi_058: 912px 608px 152px 152px;
+	kbMainBi_059: 1064px 608px 152px 152px;
+	kbMainBi_060: 1216px 608px 152px 152px;
+	kbMainBi_061: 1368px 608px 152px 152px;
+	kbMainBi_062: 1520px 608px 152px 152px;
+	kbMainBi_063: 1672px 608px 152px 152px;
+	kbMainBi_064: 1824px 608px 152px 152px;
+	kbMainBi_065: 0px 760px 152px 152px;
+	kbMainBi_066: 152px 760px 152px 152px;
+	kbMainBi_067: 304px 760px 152px 152px;
+	kbMainBi_068: 456px 760px 152px 152px;
+	kbMainBi_069: 608px 760px 152px 152px;
+	kbMainBi_070: 760px 760px 152px 152px;
+	kbMainBi_071: 912px 760px 152px 152px;
+	kbMainBi_072: 1064px 760px 152px 152px;
+	kbMainBi_073: 1216px 760px 152px 152px;
+	kbMainBi_074: 1368px 760px 152px 152px;
+	kbMainBi_075: 1520px 760px 152px 152px;
+	kbMainBi_076: 1672px 760px 152px 152px;
+	kbMainBi_077: 1824px 760px 152px 152px;
+	kbMainBi_078: 0px 912px 152px 152px;
+	kbMainBi_079: 152px 912px 152px 152px;
+	kbMainBi_080: 304px 912px 152px 152px;
+	kbMainBi_081: 456px 912px 152px 152px;
+	kbMainBi_082: 608px 912px 152px 152px;
+	kbMainBi_083: 760px 912px 152px 152px;
+	kbMainBi_084: 912px 912px 152px 152px;
+	kbMainBi_085: 1064px 912px 152px 152px;
+	kbMainBi_086: 1216px 912px 152px 152px;
+	kbMainBi_087: 1368px 912px 152px 152px;
+	kbMainBi_088: 1520px 912px 152px 152px;
+	kbMainBi_089: 1672px 912px 152px 152px;
+	src: kbMainBi_page0.png;
+}
+@spritesheet kbMainKT_page0
+{
+	kbMainKT_000: 0px 0px 152px 152px;
+	kbMainKT_001: 152px 0px 152px 152px;
+	kbMainKT_002: 304px 0px 152px 152px;
+	kbMainKT_003: 456px 0px 152px 152px;
+	kbMainKT_004: 608px 0px 152px 152px;
+	kbMainKT_005: 760px 0px 152px 152px;
+	kbMainKT_006: 912px 0px 152px 152px;
+	kbMainKT_007: 1064px 0px 152px 152px;
+	kbMainKT_008: 1216px 0px 152px 152px;
+	kbMainKT_009: 1368px 0px 152px 152px;
+	kbMainKT_010: 1520px 0px 152px 152px;
+	kbMainKT_011: 1672px 0px 152px 152px;
+	kbMainKT_012: 1824px 0px 152px 152px;
+	kbMainKT_013: 0px 152px 152px 152px;
+	kbMainKT_014: 152px 152px 152px 152px;
+	kbMainKT_015: 304px 152px 152px 152px;
+	kbMainKT_016: 456px 152px 152px 152px;
+	kbMainKT_017: 608px 152px 152px 152px;
+	kbMainKT_018: 760px 152px 152px 152px;
+	kbMainKT_019: 912px 152px 152px 152px;
+	kbMainKT_020: 1064px 152px 152px 152px;
+	kbMainKT_021: 1216px 152px 152px 152px;
+	kbMainKT_022: 1368px 152px 152px 152px;
+	kbMainKT_023: 1520px 152px 152px 152px;
+	kbMainKT_024: 1672px 152px 152px 152px;
+	kbMainKT_025: 1824px 152px 152px 152px;
+	kbMainKT_026: 0px 304px 152px 152px;
+	kbMainKT_027: 152px 304px 152px 152px;
+	kbMainKT_028: 304px 304px 152px 152px;
+	kbMainKT_029: 456px 304px 152px 152px;
+	kbMainKT_030: 608px 304px 152px 152px;
+	kbMainKT_031: 760px 304px 152px 152px;
+	kbMainKT_032: 912px 304px 152px 152px;
+	kbMainKT_033: 1064px 304px 152px 152px;
+	kbMainKT_034: 1216px 304px 152px 152px;
+	kbMainKT_035: 1368px 304px 152px 152px;
+	kbMainKT_036: 1520px 304px 152px 152px;
+	kbMainKT_037: 1672px 304px 152px 152px;
+	kbMainKT_038: 1824px 304px 152px 152px;
+	kbMainKT_039: 0px 456px 152px 152px;
+	kbMainKT_040: 152px 456px 152px 152px;
+	kbMainKT_041: 304px 456px 152px 152px;
+	kbMainKT_042: 456px 456px 152px 152px;
+	kbMainKT_043: 608px 456px 152px 152px;
+	kbMainKT_044: 760px 456px 152px 152px;
+	kbMainKT_045: 912px 456px 152px 152px;
+	kbMainKT_046: 1064px 456px 152px 152px;
+	kbMainKT_047: 1216px 456px 152px 152px;
+	kbMainKT_048: 1368px 456px 152px 152px;
+	kbMainKT_049: 1520px 456px 152px 152px;
+	kbMainKT_050: 1672px 456px 152px 152px;
+	kbMainKT_051: 1824px 456px 152px 152px;
+	kbMainKT_052: 0px 608px 152px 152px;
+	kbMainKT_053: 152px 608px 152px 152px;
+	kbMainKT_054: 304px 608px 152px 152px;
+	kbMainKT_055: 456px 608px 152px 152px;
+	kbMainKT_056: 608px 608px 152px 152px;
+	kbMainKT_057: 760px 608px 152px 152px;
+	kbMainKT_058: 912px 608px 152px 152px;
+	kbMainKT_059: 1064px 608px 152px 152px;
+	kbMainKT_060: 1216px 608px 152px 152px;
+	kbMainKT_061: 1368px 608px 152px 152px;
+	kbMainKT_062: 1520px 608px 152px 152px;
+	kbMainKT_063: 1672px 608px 152px 152px;
+	kbMainKT_064: 1824px 608px 152px 152px;
+	kbMainKT_065: 0px 760px 152px 152px;
+	kbMainKT_066: 152px 760px 152px 152px;
+	kbMainKT_067: 304px 760px 152px 152px;
+	kbMainKT_068: 456px 760px 152px 152px;
+	kbMainKT_069: 608px 760px 152px 152px;
+	kbMainKT_070: 760px 760px 152px 152px;
+	kbMainKT_071: 912px 760px 152px 152px;
+	kbMainKT_072: 1064px 760px 152px 152px;
+	kbMainKT_073: 1216px 760px 152px 152px;
+	kbMainKT_074: 1368px 760px 152px 152px;
+	kbMainKT_075: 1520px 760px 152px 152px;
+	kbMainKT_076: 1672px 760px 152px 152px;
+	kbMainKT_077: 1824px 760px 152px 152px;
+	kbMainKT_078: 0px 912px 152px 152px;
+	kbMainKT_079: 152px 912px 152px 152px;
+	kbMainKT_080: 304px 912px 152px 152px;
+	kbMainKT_081: 456px 912px 152px 152px;
+	kbMainKT_082: 608px 912px 152px 152px;
+	kbMainKT_083: 760px 912px 152px 152px;
+	kbMainKT_084: 912px 912px 152px 152px;
+	kbMainKT_085: 1064px 912px 152px 152px;
+	kbMainKT_086: 1216px 912px 152px 152px;
+	kbMainKT_087: 1368px 912px 152px 152px;
+	kbMainKT_088: 1520px 912px 152px 152px;
+	kbMainKT_089: 1672px 912px 152px 152px;
+	src: kbMainKT_page0.png;
+}
+@spritesheet kbMainUni_page0
+{
+	kbMainUni_000: 0px 0px 152px 152px;
+	kbMainUni_001: 152px 0px 152px 152px;
+	kbMainUni_002: 304px 0px 152px 152px;
+	kbMainUni_003: 456px 0px 152px 152px;
+	kbMainUni_004: 608px 0px 152px 152px;
+	kbMainUni_005: 760px 0px 152px 152px;
+	kbMainUni_006: 912px 0px 152px 152px;
+	kbMainUni_007: 1064px 0px 152px 152px;
+	kbMainUni_008: 1216px 0px 152px 152px;
+	kbMainUni_009: 1368px 0px 152px 152px;
+	kbMainUni_010: 1520px 0px 152px 152px;
+	kbMainUni_011: 1672px 0px 152px 152px;
+	kbMainUni_012: 1824px 0px 152px 152px;
+	kbMainUni_013: 0px 152px 152px 152px;
+	kbMainUni_014: 152px 152px 152px 152px;
+	kbMainUni_015: 304px 152px 152px 152px;
+	kbMainUni_016: 456px 152px 152px 152px;
+	kbMainUni_017: 608px 152px 152px 152px;
+	kbMainUni_018: 760px 152px 152px 152px;
+	kbMainUni_019: 912px 152px 152px 152px;
+	kbMainUni_020: 1064px 152px 152px 152px;
+	kbMainUni_021: 1216px 152px 152px 152px;
+	kbMainUni_022: 1368px 152px 152px 152px;
+	kbMainUni_023: 1520px 152px 152px 152px;
+	kbMainUni_024: 1672px 152px 152px 152px;
+	kbMainUni_025: 1824px 152px 152px 152px;
+	kbMainUni_026: 0px 304px 152px 152px;
+	kbMainUni_027: 152px 304px 152px 152px;
+	kbMainUni_028: 304px 304px 152px 152px;
+	kbMainUni_029: 456px 304px 152px 152px;
+	kbMainUni_030: 608px 304px 152px 152px;
+	kbMainUni_031: 760px 304px 152px 152px;
+	kbMainUni_032: 912px 304px 152px 152px;
+	kbMainUni_033: 1064px 304px 152px 152px;
+	kbMainUni_034: 1216px 304px 152px 152px;
+	kbMainUni_035: 1368px 304px 152px 152px;
+	kbMainUni_036: 1520px 304px 152px 152px;
+	kbMainUni_037: 1672px 304px 152px 152px;
+	kbMainUni_038: 1824px 304px 152px 152px;
+	kbMainUni_039: 0px 456px 152px 152px;
+	kbMainUni_040: 152px 456px 152px 152px;
+	kbMainUni_041: 304px 456px 152px 152px;
+	kbMainUni_042: 456px 456px 152px 152px;
+	kbMainUni_043: 608px 456px 152px 152px;
+	kbMainUni_044: 760px 456px 152px 152px;
+	kbMainUni_045: 912px 456px 152px 152px;
+	kbMainUni_046: 1064px 456px 152px 152px;
+	kbMainUni_047: 1216px 456px 152px 152px;
+	kbMainUni_048: 1368px 456px 152px 152px;
+	kbMainUni_049: 1520px 456px 152px 152px;
+	kbMainUni_050: 1672px 456px 152px 152px;
+	kbMainUni_051: 1824px 456px 152px 152px;
+	kbMainUni_052: 0px 608px 152px 152px;
+	kbMainUni_053: 152px 608px 152px 152px;
+	kbMainUni_054: 304px 608px 152px 152px;
+	kbMainUni_055: 456px 608px 152px 152px;
+	kbMainUni_056: 608px 608px 152px 152px;
+	kbMainUni_057: 760px 608px 152px 152px;
+	kbMainUni_058: 912px 608px 152px 152px;
+	kbMainUni_059: 1064px 608px 152px 152px;
+	kbMainUni_060: 1216px 608px 152px 152px;
+	kbMainUni_061: 1368px 608px 152px 152px;
+	kbMainUni_062: 1520px 608px 152px 152px;
+	kbMainUni_063: 1672px 608px 152px 152px;
+	kbMainUni_064: 1824px 608px 152px 152px;
+	kbMainUni_065: 0px 760px 152px 152px;
+	kbMainUni_066: 152px 760px 152px 152px;
+	kbMainUni_067: 304px 760px 152px 152px;
+	kbMainUni_068: 456px 760px 152px 152px;
+	kbMainUni_069: 608px 760px 152px 152px;
+	kbMainUni_070: 760px 760px 152px 152px;
+	kbMainUni_071: 912px 760px 152px 152px;
+	kbMainUni_072: 1064px 760px 152px 152px;
+	kbMainUni_073: 1216px 760px 152px 152px;
+	kbMainUni_074: 1368px 760px 152px 152px;
+	kbMainUni_075: 1520px 760px 152px 152px;
+	kbMainUni_076: 1672px 760px 152px 152px;
+	kbMainUni_077: 1824px 760px 152px 152px;
+	kbMainUni_078: 0px 912px 152px 152px;
+	kbMainUni_079: 152px 912px 152px 152px;
+	kbMainUni_080: 304px 912px 152px 152px;
+	kbMainUni_081: 456px 912px 152px 152px;
+	kbMainUni_082: 608px 912px 152px 152px;
+	kbMainUni_083: 760px 912px 152px 152px;
+	kbMainUni_084: 912px 912px 152px 152px;
+	kbMainUni_085: 1064px 912px 152px 152px;
+	kbMainUni_086: 1216px 912px 152px 152px;
+	kbMainUni_087: 1368px 912px 152px 152px;
+	kbMainUni_088: 1520px 912px 152px 152px;
+	kbMainUni_089: 1672px 912px 152px 152px;
+	src: kbMainUni_page0.png;
+}
+@spritesheet kbRedUni_page0
+{
+	kbRedUni_000: 0px 0px 152px 152px;
+	kbRedUni_001: 152px 0px 152px 152px;
+	kbRedUni_002: 304px 0px 152px 152px;
+	kbRedUni_003: 456px 0px 152px 152px;
+	kbRedUni_004: 608px 0px 152px 152px;
+	kbRedUni_005: 760px 0px 152px 152px;
+	kbRedUni_006: 912px 0px 152px 152px;
+	kbRedUni_007: 1064px 0px 152px 152px;
+	kbRedUni_008: 1216px 0px 152px 152px;
+	kbRedUni_009: 1368px 0px 152px 152px;
+	kbRedUni_010: 1520px 0px 152px 152px;
+	kbRedUni_011: 1672px 0px 152px 152px;
+	kbRedUni_012: 1824px 0px 152px 152px;
+	kbRedUni_013: 0px 152px 152px 152px;
+	kbRedUni_014: 152px 152px 152px 152px;
+	kbRedUni_015: 304px 152px 152px 152px;
+	kbRedUni_016: 456px 152px 152px 152px;
+	kbRedUni_017: 608px 152px 152px 152px;
+	kbRedUni_018: 760px 152px 152px 152px;
+	kbRedUni_019: 912px 152px 152px 152px;
+	kbRedUni_020: 1064px 152px 152px 152px;
+	kbRedUni_021: 1216px 152px 152px 152px;
+	kbRedUni_022: 1368px 152px 152px 152px;
+	kbRedUni_023: 1520px 152px 152px 152px;
+	kbRedUni_024: 1672px 152px 152px 152px;
+	kbRedUni_025: 1824px 152px 152px 152px;
+	kbRedUni_026: 0px 304px 152px 152px;
+	kbRedUni_027: 152px 304px 152px 152px;
+	kbRedUni_028: 304px 304px 152px 152px;
+	kbRedUni_029: 456px 304px 152px 152px;
+	kbRedUni_030: 608px 304px 152px 152px;
+	kbRedUni_031: 760px 304px 152px 152px;
+	kbRedUni_032: 912px 304px 152px 152px;
+	kbRedUni_033: 1064px 304px 152px 152px;
+	kbRedUni_034: 1216px 304px 152px 152px;
+	kbRedUni_035: 1368px 304px 152px 152px;
+	kbRedUni_036: 1520px 304px 152px 152px;
+	kbRedUni_037: 1672px 304px 152px 152px;
+	kbRedUni_038: 1824px 304px 152px 152px;
+	kbRedUni_039: 0px 456px 152px 152px;
+	kbRedUni_040: 152px 456px 152px 152px;
+	kbRedUni_041: 304px 456px 152px 152px;
+	kbRedUni_042: 456px 456px 152px 152px;
+	kbRedUni_043: 608px 456px 152px 152px;
+	kbRedUni_044: 760px 456px 152px 152px;
+	kbRedUni_045: 912px 456px 152px 152px;
+	kbRedUni_046: 1064px 456px 152px 152px;
+	kbRedUni_047: 1216px 456px 152px 152px;
+	kbRedUni_048: 1368px 456px 152px 152px;
+	kbRedUni_049: 1520px 456px 152px 152px;
+	kbRedUni_050: 1672px 456px 152px 152px;
+	kbRedUni_051: 1824px 456px 152px 152px;
+	kbRedUni_052: 0px 608px 152px 152px;
+	kbRedUni_053: 152px 608px 152px 152px;
+	kbRedUni_054: 304px 608px 152px 152px;
+	kbRedUni_055: 456px 608px 152px 152px;
+	kbRedUni_056: 608px 608px 152px 152px;
+	kbRedUni_057: 760px 608px 152px 152px;
+	kbRedUni_058: 912px 608px 152px 152px;
+	kbRedUni_059: 1064px 608px 152px 152px;
+	kbRedUni_060: 1216px 608px 152px 152px;
+	kbRedUni_061: 1368px 608px 152px 152px;
+	kbRedUni_062: 1520px 608px 152px 152px;
+	kbRedUni_063: 1672px 608px 152px 152px;
+	kbRedUni_064: 1824px 608px 152px 152px;
+	kbRedUni_065: 0px 760px 152px 152px;
+	kbRedUni_066: 152px 760px 152px 152px;
+	kbRedUni_067: 304px 760px 152px 152px;
+	kbRedUni_068: 456px 760px 152px 152px;
+	kbRedUni_069: 608px 760px 152px 152px;
+	kbRedUni_070: 760px 760px 152px 152px;
+	kbRedUni_071: 912px 760px 152px 152px;
+	kbRedUni_072: 1064px 760px 152px 152px;
+	kbRedUni_073: 1216px 760px 152px 152px;
+	kbRedUni_074: 1368px 760px 152px 152px;
+	kbRedUni_075: 1520px 760px 152px 152px;
+	kbRedUni_076: 1672px 760px 152px 152px;
+	kbRedUni_077: 1824px 760px 152px 152px;
+	kbRedUni_078: 0px 912px 152px 152px;
+	kbRedUni_079: 152px 912px 152px 152px;
+	kbRedUni_080: 304px 912px 152px 152px;
+	kbRedUni_081: 456px 912px 152px 152px;
+	kbRedUni_082: 608px 912px 152px 152px;
+	kbRedUni_083: 760px 912px 152px 152px;
+	kbRedUni_084: 912px 912px 152px 152px;
+	kbRedUni_085: 1064px 912px 152px 152px;
+	kbRedUni_086: 1216px 912px 152px 152px;
+	kbRedUni_087: 1368px 912px 152px 152px;
+	kbRedUni_088: 1520px 912px 152px 152px;
+	kbRedUni_089: 1672px 912px 152px 152px;
+	src: kbRedUni_page0.png;
+}
+@spritesheet kbWavetable_page0
+{
+	kbWavetable_000: 0px 0px 170px 170px;
+	kbWavetable_001: 170px 0px 170px 170px;
+	kbWavetable_002: 340px 0px 170px 170px;
+	kbWavetable_003: 510px 0px 170px 170px;
+	kbWavetable_004: 680px 0px 170px 170px;
+	kbWavetable_005: 850px 0px 170px 170px;
+	kbWavetable_006: 1020px 0px 170px 170px;
+	kbWavetable_007: 1190px 0px 170px 170px;
+	kbWavetable_008: 1360px 0px 170px 170px;
+	kbWavetable_009: 1530px 0px 170px 170px;
+	kbWavetable_010: 1700px 0px 170px 170px;
+	kbWavetable_011: 1870px 0px 170px 170px;
+	kbWavetable_012: 0px 170px 170px 170px;
+	kbWavetable_013: 170px 170px 170px 170px;
+	kbWavetable_014: 340px 170px 170px 170px;
+	kbWavetable_015: 510px 170px 170px 170px;
+	kbWavetable_016: 680px 170px 170px 170px;
+	kbWavetable_017: 850px 170px 170px 170px;
+	kbWavetable_018: 1020px 170px 170px 170px;
+	kbWavetable_019: 1190px 170px 170px 170px;
+	kbWavetable_020: 1360px 170px 170px 170px;
+	kbWavetable_021: 1530px 170px 170px 170px;
+	kbWavetable_022: 1700px 170px 170px 170px;
+	kbWavetable_023: 1870px 170px 170px 170px;
+	kbWavetable_024: 0px 340px 170px 170px;
+	kbWavetable_025: 170px 340px 170px 170px;
+	kbWavetable_026: 340px 340px 170px 170px;
+	kbWavetable_027: 510px 340px 170px 170px;
+	kbWavetable_028: 680px 340px 170px 170px;
+	kbWavetable_029: 850px 340px 170px 170px;
+	kbWavetable_030: 1020px 340px 170px 170px;
+	kbWavetable_031: 1190px 340px 170px 170px;
+	kbWavetable_032: 1360px 340px 170px 170px;
+	kbWavetable_033: 1530px 340px 170px 170px;
+	kbWavetable_034: 1700px 340px 170px 170px;
+	kbWavetable_035: 1870px 340px 170px 170px;
+	kbWavetable_036: 0px 510px 170px 170px;
+	kbWavetable_037: 170px 510px 170px 170px;
+	kbWavetable_038: 340px 510px 170px 170px;
+	kbWavetable_039: 510px 510px 170px 170px;
+	kbWavetable_040: 680px 510px 170px 170px;
+	kbWavetable_041: 850px 510px 170px 170px;
+	kbWavetable_042: 1020px 510px 170px 170px;
+	kbWavetable_043: 1190px 510px 170px 170px;
+	kbWavetable_044: 1360px 510px 170px 170px;
+	kbWavetable_045: 1530px 510px 170px 170px;
+	kbWavetable_046: 1700px 510px 170px 170px;
+	kbWavetable_047: 1870px 510px 170px 170px;
+	kbWavetable_048: 0px 680px 170px 170px;
+	kbWavetable_049: 170px 680px 170px 170px;
+	kbWavetable_050: 340px 680px 170px 170px;
+	kbWavetable_051: 510px 680px 170px 170px;
+	kbWavetable_052: 680px 680px 170px 170px;
+	kbWavetable_053: 850px 680px 170px 170px;
+	kbWavetable_054: 1020px 680px 170px 170px;
+	kbWavetable_055: 1190px 680px 170px 170px;
+	kbWavetable_056: 1360px 680px 170px 170px;
+	kbWavetable_057: 1530px 680px 170px 170px;
+	kbWavetable_058: 1700px 680px 170px 170px;
+	kbWavetable_059: 1870px 680px 170px 170px;
+	kbWavetable_060: 0px 850px 170px 170px;
+	kbWavetable_061: 170px 850px 170px 170px;
+	kbWavetable_062: 340px 850px 170px 170px;
+	kbWavetable_063: 510px 850px 170px 170px;
+	kbWavetable_064: 680px 850px 170px 170px;
+	kbWavetable_065: 850px 850px 170px 170px;
+	kbWavetable_066: 1020px 850px 170px 170px;
+	kbWavetable_067: 1190px 850px 170px 170px;
+	kbWavetable_068: 1360px 850px 170px 170px;
+	kbWavetable_069: 1530px 850px 170px 170px;
+	kbWavetable_070: 1700px 850px 170px 170px;
+	kbWavetable_071: 1870px 850px 170px 170px;
+	kbWavetable_072: 0px 1020px 170px 170px;
+	kbWavetable_073: 170px 1020px 170px 170px;
+	kbWavetable_074: 340px 1020px 170px 170px;
+	kbWavetable_075: 510px 1020px 170px 170px;
+	kbWavetable_076: 680px 1020px 170px 170px;
+	kbWavetable_077: 850px 1020px 170px 170px;
+	kbWavetable_078: 1020px 1020px 170px 170px;
+	kbWavetable_079: 1190px 1020px 170px 170px;
+	kbWavetable_080: 1360px 1020px 170px 170px;
+	kbWavetable_081: 1530px 1020px 170px 170px;
+	kbWavetable_082: 1700px 1020px 170px 170px;
+	kbWavetable_083: 1870px 1020px 170px 170px;
+	kbWavetable_084: 0px 1190px 170px 170px;
+	kbWavetable_085: 170px 1190px 170px 170px;
+	kbWavetable_086: 340px 1190px 170px 170px;
+	kbWavetable_087: 510px 1190px 170px 170px;
+	kbWavetable_088: 680px 1190px 170px 170px;
+	kbWavetable_089: 850px 1190px 170px 170px;
+	src: kbWavetable_page0.png;
+}
+@spritesheet lbPlayParams_page0
+{
+	lbPlayParams_000: 0px 0px 306px 202px;
+	lbPlayParams_001: 306px 0px 306px 202px;
+	lbPlayParams_002: 612px 0px 306px 202px;
+	lbPlayParams_003: 918px 0px 306px 202px;
+	lbPlayParams_004: 1224px 0px 306px 202px;
+	lbPlayParams_005: 1530px 0px 306px 202px;
+	lbPlayParams_006: 0px 202px 306px 202px;
+	lbPlayParams_007: 306px 202px 306px 202px;
+	lbPlayParams_008: 612px 202px 306px 202px;
+	lbPlayParams_009: 918px 202px 306px 202px;
+	lbPlayParams_010: 1224px 202px 306px 202px;
+	lbPlayParams_011: 1530px 202px 306px 202px;
+	lbPlayParams_012: 0px 404px 306px 202px;
+	lbPlayParams_013: 306px 404px 306px 202px;
+	lbPlayParams_014: 612px 404px 306px 202px;
+	lbPlayParams_015: 918px 404px 306px 202px;
+	lbPlayParams_016: 1224px 404px 306px 202px;
+	lbPlayParams_017: 1530px 404px 306px 202px;
+	lbPlayParams_018: 0px 606px 306px 202px;
+	lbPlayParams_019: 306px 606px 306px 202px;
+	lbPlayParams_020: 612px 606px 306px 202px;
+	lbPlayParams_021: 918px 606px 306px 202px;
+	lbPlayParams_022: 1224px 606px 306px 202px;
+	lbPlayParams_023: 1530px 606px 306px 202px;
+	lbPlayParams_024: 0px 808px 306px 202px;
+	lbPlayParams_025: 306px 808px 306px 202px;
+	lbPlayParams_026: 612px 808px 306px 202px;
+	lbPlayParams_027: 918px 808px 306px 202px;
+	lbPlayParams_028: 1224px 808px 306px 202px;
+	lbPlayParams_029: 1530px 808px 306px 202px;
+	lbPlayParams_030: 0px 1010px 306px 202px;
+	lbPlayParams_031: 306px 1010px 306px 202px;
+	lbPlayParams_032: 612px 1010px 306px 202px;
+	lbPlayParams_033: 918px 1010px 306px 202px;
+	lbPlayParams_034: 1224px 1010px 306px 202px;
+	lbPlayParams_035: 1530px 1010px 306px 202px;
+	lbPlayParams_036: 0px 1212px 306px 202px;
+	lbPlayParams_037: 306px 1212px 306px 202px;
+	lbPlayParams_038: 612px 1212px 306px 202px;
+	lbPlayParams_039: 918px 1212px 306px 202px;
+	lbPlayParams_040: 1224px 1212px 306px 202px;
+	lbPlayParams_041: 1530px 1212px 306px 202px;
+	lbPlayParams_042: 0px 1414px 306px 202px;
+	lbPlayParams_043: 306px 1414px 306px 202px;
+	lbPlayParams_044: 612px 1414px 306px 202px;
+	lbPlayParams_045: 918px 1414px 306px 202px;
+	lbPlayParams_046: 1224px 1414px 306px 202px;
+	lbPlayParams_047: 1530px 1414px 306px 202px;
+	lbPlayParams_048: 0px 1616px 306px 202px;
+	lbPlayParams_049: 306px 1616px 306px 202px;
+	lbPlayParams_050: 612px 1616px 306px 202px;
+	lbPlayParams_051: 918px 1616px 306px 202px;
+	lbPlayParams_052: 1224px 1616px 306px 202px;
+	lbPlayParams_053: 1530px 1616px 306px 202px;
+	lbPlayParams_054: 0px 1818px 306px 202px;
+	lbPlayParams_055: 306px 1818px 306px 202px;
+	lbPlayParams_056: 612px 1818px 306px 202px;
+	lbPlayParams_057: 918px 1818px 306px 202px;
+	lbPlayParams_058: 1224px 1818px 306px 202px;
+	lbPlayParams_059: 1530px 1818px 306px 202px;
+	src: lbPlayParams_page0.png;
+}
+@spritesheet lbPlayParams_page1
+{
+	lbPlayParams_060: 0px 0px 306px 202px;
+	lbPlayParams_061: 306px 0px 306px 202px;
+	lbPlayParams_062: 612px 0px 306px 202px;
+	lbPlayParams_063: 918px 0px 306px 202px;
+	lbPlayParams_064: 1224px 0px 306px 202px;
+	lbPlayParams_065: 1530px 0px 306px 202px;
+	lbPlayParams_066: 0px 202px 306px 202px;
+	lbPlayParams_067: 306px 202px 306px 202px;
+	lbPlayParams_068: 612px 202px 306px 202px;
+	lbPlayParams_069: 918px 202px 306px 202px;
+	lbPlayParams_070: 1224px 202px 306px 202px;
+	lbPlayParams_071: 1530px 202px 306px 202px;
+	lbPlayParams_072: 0px 404px 306px 202px;
+	lbPlayParams_073: 306px 404px 306px 202px;
+	lbPlayParams_074: 612px 404px 306px 202px;
+	lbPlayParams_075: 918px 404px 306px 202px;
+	lbPlayParams_076: 1224px 404px 306px 202px;
+	lbPlayParams_077: 1530px 404px 306px 202px;
+	lbPlayParams_078: 0px 606px 306px 202px;
+	lbPlayParams_079: 306px 606px 306px 202px;
+	lbPlayParams_080: 612px 606px 306px 202px;
+	lbPlayParams_081: 918px 606px 306px 202px;
+	lbPlayParams_082: 1224px 606px 306px 202px;
+	lbPlayParams_083: 1530px 606px 306px 202px;
+	src: lbPlayParams_page1.png;
+}
+@spritesheet ledMidi
+{
+	ledMidi_active: 0px 128px 128px 128px;
+	ledMidi_checked: 0px 128px 128px 128px;
+	ledMidi_checked-active: 0px 128px 128px 128px;
+	ledMidi_checked-hover: 0px 128px 128px 128px;
+	ledMidi_default: 0px 0px 128px 128px;
+	ledMidi_hover: 0px 0px 128px 128px;
+	src: ledMidi.png;
+}
+@spritesheet led
+{
+	led_active: 0px 128px 128px 128px;
+	led_checked: 0px 128px 128px 128px;
+	led_checked-active: 0px 128px 128px 128px;
+	led_checked-hover: 0px 128px 128px 128px;
+	led_default: 0px 0px 128px 128px;
+	led_hover: 0px 128px 128px 128px;
+	src: led.png;
+}
+@spritesheet buttonLEDclick
+{
+	src: buttonLEDclick.png;
+	buttonLEDclick_active: 0px 256px 128px 128px;
+	buttonLEDclick_checked: 0px 128px 128px 128px;
+	buttonLEDclick_checked-active: 0px 384px 128px 128px;
+	buttonLEDclick_checked-hover: 0px 128px 128px 128px;
+	buttonLEDclick_default: 0px 0px 128px 128px;
+	buttonLEDclick_hover: 0px 0px 128px 128px;
+}
+@spritesheet simp_button
+{
+	src: simp_button.png;
+	simp_button_active: 0px 128px 128px 128px;
+	simp_button_checked: 0px 128px 128px 128px;
+	simp_button_checked-active: 0px 128px 128px 128px;
+	simp_button_checked-hover: 0px 128px 128px 128px;
+	simp_button_default: 0px 0px 128px 128px;
+	simp_button_hover: 0px 256px 128px 128px;
+}
+@spritesheet simp_button_minus
+{
+	src: simp_button_minus.png;
+	simp_button_minus_active: 0px 64px 64px 64px;
+	simp_button_minus_checked: 0px 64px 64px 64px;
+	simp_button_minus_checked-active: 0px 64px 64px 64px;
+	simp_button_minus_checked-hover: 0px 64px 64px 64px;
+	simp_button_minus_default: 0px 0px 64px 64px;
+	simp_button_minus_hover: 0px 0px 64px 64px;
+}
+@spritesheet simp_button_plus
+{
+	src: simp_button_plus.png;
+	simp_button_plus_active: 0px 64px 64px 64px;
+	simp_button_plus_checked: 0px 64px 64px 64px;
+	simp_button_plus_checked-active: 0px 64px 64px 64px;
+	simp_button_plus_checked-hover: 0px 64px 64px 64px;
+	simp_button_plus_default: 0px 0px 64px 64px;
+	simp_button_plus_hover: 0px 0px 64px 64px;
+}
+@spritesheet simp_button_red_minus
+{
+	src: simp_button_red_minus.png;
+	simp_button_red_minus_active: 0px 128px 128px 128px;
+	simp_button_red_minus_checked: 0px 128px 128px 128px;
+	simp_button_red_minus_checked-active: 0px 128px 128px 128px;
+	simp_button_red_minus_checked-hover: 0px 128px 128px 128px;
+	simp_button_red_minus_default: 0px 0px 128px 128px;
+	simp_button_red_minus_hover: 0px 0px 128px 128px;
+}
+@spritesheet simp_button_red_plus
+{
+	src: simp_button_red_plus.png;
+	simp_button_red_plus_active: 0px 128px 128px 128px;
+	simp_button_red_plus_checked: 0px 128px 128px 128px;
+	simp_button_red_plus_checked-active: 0px 128px 128px 128px;
+	simp_button_red_plus_checked-hover: 0px 128px 128px 128px;
+	simp_button_red_plus_default: 0px 0px 128px 128px;
+	simp_button_red_plus_hover: 0px 0px 128px 128px;
+}
+@spritesheet simp_button_small
+{
+	src: simp_button_small.png;
+	simp_button_small_active: 0px 128px 64px 64px;
+	simp_button_small_checked: 0px 128px 64px 64px;
+	simp_button_small_checked-active: 0px 192px 64px 64px;
+	simp_button_small_checked-hover: 0px 128px 64px 64px;
+	simp_button_small_default: 0px 0px 64px 64px;
+	simp_button_small_hover: 0px 256px 64px 64px;
+}
+.btBrowser
+{
+	decorator: image(btBrowser_default fill);
+}
+.btBrowser:checked
+{
+	decorator: image(btBrowser_checked fill);
+}
+.btBrowser:checked:active
+{
+	decorator: image(btBrowser_checked-active fill);
+}
+.btBrowser:checked:hover
+{
+	decorator: image(btBrowser_checked-hover fill);
+}
+.btBrowser:hover
+{
+	decorator: image(btBrowser_hover fill);
+}
+.knob
+{
+	frames: 84;
+	spriteprefix: lbPlayParams_;
+}
+.knob1
+{
+	frames: 90;
+	spriteprefix: kbMainUni_;
+}
+.knob2
+{
+	frames: 90;
+	spriteprefix: kbMainBi_;
+}
+.knob3
+{
+	frames: 90;
+	spriteprefix: kbMainKT_;
+}
+.knob4
+{
+	frames: 90;
+	spriteprefix: kbWavetable_;
+}
+.knob5
+{
+	frames: 90;
+	spriteprefix: kbRedUni_;
+}
+.led
+{
+	decorator: image(led_default fill);
+}
+.led:checked
+{
+	decorator: image(led_checked fill);
+}
+.led:checked:active
+{
+	decorator: image(led_checked-active fill);
+}
+.led:checked:hover
+{
+	decorator: image(led_checked-hover fill);
+}
+.led:hover
+{
+	decorator: image(led_hover fill);
+}
+.ledMidi
+{
+	decorator: image(ledMidi_default fill);
+}
+.ledMidi:checked
+{
+	decorator: image(ledMidi_checked fill);
+}
+.ledMidi:checked:active
+{
+	decorator: image(ledMidi_checked-active fill);
+}
+.ledMidi:checked:hover
+{
+	decorator: image(ledMidi_checked-hover fill);
+}
+.ledMidi:hover
+{
+	decorator: image(ledMidi_hover fill);
+}
+.list, .grid, .pm-infopanel
+{
+	background-color: #1c120c;
+}
+.listentry, .gridentry
+{
+	color: #f5cd92;
+	font-size: 28.000000dp;
+	text-align: left;
+}
+.listentry:selected, .gridentry:selected
+{
+	background-color: #8f4d25;
+}
+.pm-hlayout
+{
+	background-color: #1c120c;
+}
+.pm-info-headline
+{
+	color: #eacbad;
+	font-size: 32.000000dp;
+}
+.pm-info-name
+{
+	color: #e0a867;
+	font-size: 64.000000dp;
+}
+.pm-info-text
+{
+	color: #e0a867;
+	font-size: 32.000000dp;
+}
+.pm-status
+{
+	border: 0dp transparent;
+	color: #f5cd92;
+	font-size: 32.000000dp;
+	text-align: left;
+}
+.pm-vlayout
+{
+	gap: 4dp;
+}
+.pm-count {
+	font-weight: 700;
+	color: #f5cd92;
+}
+.txt
+{
+	color: #fbf1e4;
+	font-size: 24dp;
+	font-weight: 400;
+	text-align: left;
+}
+.txt1
+{
+	color: #fbf1e4;
+	font-size: 34.000000dp;
+	font-weight: bold;
+	text-align: center;
+}
+.txt2
+{
+	color: #f5cd92;
+	font-size: 40.000000dp;
+	text-align: center;
+	display: none;
+}
+.buttonLEDclick
+{
+	decorator: image(buttonLEDclick_default fill);
+}
+.buttonLEDclick:checked
+{
+	decorator: image(buttonLEDclick_checked fill);
+}
+.buttonLEDclick:checked:active
+{
+	decorator: image(buttonLEDclick_checked-active fill);
+}
+.buttonLEDclick:checked:hover
+{
+	decorator: image(buttonLEDclick_checked-hover fill);
+}
+.buttonLEDclick:hover
+{
+	decorator: image(buttonLEDclick_hover fill);
+}
+.simp_button
+{
+	decorator: image(simp_button_default fill);
+}
+.simp_button:checked
+{
+	decorator: image(simp_button_checked fill);
+}
+.simp_button:checked:active
+{
+	decorator: image(simp_button_checked-active fill);
+}
+.simp_button:checked:hover
+{
+	decorator: image(simp_button_checked-hover fill);
+}
+.simp_button:hover
+{
+	decorator: image(simp_button_hover fill);
+}
+.simp_button_minus
+{
+	decorator: image(simp_button_minus_default fill);
+}
+.simp_button_minus:checked
+{
+	decorator: image(simp_button_minus_checked fill);
+}
+.simp_button_minus:checked:active
+{
+	decorator: image(simp_button_minus_checked-active fill);
+}
+.simp_button_minus:checked:hover
+{
+	decorator: image(simp_button_minus_checked-hover fill);
+}
+.simp_button_minus:hover
+{
+	decorator: image(simp_button_minus_hover fill);
+}
+.simp_button_plus
+{
+	decorator: image(simp_button_plus_default fill);
+}
+.simp_button_plus:checked
+{
+	decorator: image(simp_button_plus_checked fill);
+}
+.simp_button_plus:checked:active
+{
+	decorator: image(simp_button_plus_checked-active fill);
+}
+.simp_button_plus:checked:hover
+{
+	decorator: image(simp_button_plus_checked-hover fill);
+}
+.simp_button_plus:hover
+{
+	decorator: image(simp_button_plus_hover fill);
+}
+.simp_button_red_minus
+{
+	decorator: image(simp_button_red_minus_default fill);
+}
+.simp_button_red_minus:checked
+{
+	decorator: image(simp_button_red_minus_checked fill);
+}
+.simp_button_red_minus:checked:active
+{
+	decorator: image(simp_button_red_minus_checked-active fill);
+}
+.simp_button_red_minus:checked:hover
+{
+	decorator: image(simp_button_red_minus_checked-hover fill);
+}
+.simp_button_red_minus:hover
+{
+	decorator: image(simp_button_red_minus_hover fill);
+}
+.simp_button_red_plus
+{
+	decorator: image(simp_button_red_plus_default fill);
+}
+.simp_button_red_plus:checked
+{
+	decorator: image(simp_button_red_plus_checked fill);
+}
+.simp_button_red_plus:checked:active
+{
+	decorator: image(simp_button_red_plus_checked-active fill);
+}
+.simp_button_red_plus:checked:hover
+{
+	decorator: image(simp_button_red_plus_checked-hover fill);
+}
+.simp_button_red_plus:hover
+{
+	decorator: image(simp_button_red_plus_hover fill);
+}
+.simp_button_small
+{
+	decorator: image(simp_button_small_default fill);
+}
+.simp_button_small:checked
+{
+	decorator: image(simp_button_small_checked fill);
+}
+.simp_button_small:checked:active
+{
+	decorator: image(simp_button_small_checked-active fill);
+}
+.simp_button_small:checked:hover
+{
+	decorator: image(simp_button_small_checked-hover fill);
+}
+.simp_button_small:hover
+{
+	decorator: image(simp_button_small_hover fill);
+}
+body
+{
+	font-size: 28dp;
+    font-family: Gabarito;
+}
+input.text
+{
+	background-color: #1c120c;
+	border: 0dp transparent;
+	color: #f5cd92;
+	font-size: 28.000000dp;
+	text-align: left;
+}
+scrollbarvertical sliderbar, scrollbarhorizontal sliderbar, splitter:active
+{
+	background-color: #a9672f;
+}
+tree
+{
+	background-color: #1c120c;
+}
+treenode
+{
+	color: #fbf1e4;
+	font-size: 28.000000dp;
+	text-align: left;
+}
+treenode:selected
+{
+	background-color: #8f4d25;
+}
+
+
+/* active states */
+.simp_button:active
+{
+	decorator: image(simp_button_active fill);
+}
+.simp_button_small:active
+{
+	decorator: image(simp_button_small_active fill);
+}
+.simp_button_plus:active
+{
+	decorator: image(simp_button_plus_active fill);
+}
+.simp_button_minus:active
+{
+	decorator: image(simp_button_minus_active fill);
+}
+.simp_button_red_plus:active
+{
+	decorator: image(simp_button_red_plus_active fill);
+}
+.simp_button_red_minus:active
+{
+	decorator: image(simp_button_red_minus_active fill);
+}
+.buttonLEDclick:active
+{
+	decorator: image(buttonLEDclick_active fill);
+}
+.btBrowser:active
+{
+	decorator: image(btBrowser_active fill);
+}
