@@ -14,8 +14,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Parse tag
         id: parse_tag
@@ -29,14 +27,15 @@ jobs:
       - name: Load synth map
         id: synth_map
         run: |
+          SYNTH="${{ steps.parse_tag.outputs.synth }}"
           MAP_FILE=".github/synth-map.yml"
           if [[ ! -f "$MAP_FILE" ]]; then
             echo "::error::Missing $MAP_FILE"
             exit 1
           fi
-          SOURCE_DIR=$(yq -r ".${{ steps.parse_tag.outputs.synth }}" "$MAP_FILE")
-          if [[ -z "$SOURCE_DIR" || "$SOURCE_DIR" == "null" ]]; then
-            echo "::error::Synth '${{ steps.parse_tag.outputs.synth }}' not found in $MAP_FILE"
+          SOURCE_DIR=$(grep -E "^${SYNTH}:" "$MAP_FILE" | cut -d: -f2 | tr -d ' ')
+          if [[ -z "$SOURCE_DIR" ]]; then
+            echo "::error::Synth '$SYNTH' not found in $MAP_FILE"
             exit 1
           fi
           echo "source_dir=$SOURCE_DIR" >> $GITHUB_OUTPUT
@@ -67,33 +66,6 @@ jobs:
             echo "_No release notes provided._" >> /tmp/release_body.md
           fi
 
-      - name: Upload screenshots as assets
-        id: upload_screenshots
-        run: |
-          SCREENSHOT_DIR="release/${{ steps.parse_tag.outputs.synth }}/screenshots"
-          ASSET_URLS=()
-          if [[ -d "$SCREENSHOT_DIR" ]]; then
-            for file in "$SCREENSHOT_DIR"/*; do
-              [[ -f "$file" ]] || continue
-              FILENAME=$(basename "$file")
-              UPLOAD_URL="https://uploads.github.com/repos/${{ github.repository }}/releases/${{ steps.create_release.outputs.release_id }}/assets?name=${FILENAME}"
-              RESPONSE=$(curl -s -X POST \
-                -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-                -H "Content-Type: $(file --mime-type -b "$file")" \
-                --data-binary @"$file" \
-                "$UPLOAD_URL")
-              ASSET_URL=$(echo "$RESPONSE" | jq -r '.browser_download_url')
-              ASSET_URLS+=("$ASSET_URL")
-              echo "Uploaded: $FILENAME -> $ASSET_URL"
-            done
-          fi
-          # Append screenshot markdown to release notes
-          for url in "${ASSET_URLS[@]}"; do
-            FILENAME=$(basename "$url")
-            echo "" >> /tmp/release_body.md
-            echo "![${FILENAME}](${url})" >> /tmp/release_body.md
-          done
-
       - name: Create Release
         id: create_release
         uses: softprops/action-gh-release@v1
@@ -101,7 +73,9 @@ jobs:
           tag_name: ${{ github.ref_name }}
           name: Simpless-${{ steps.parse_tag.outputs.synth | upper }}-${{ steps.parse_tag.outputs.version }}
           body_path: /tmp/release_body.md
-          files: ${{ steps.build_zip.outputs.zip_path }}
+          files: |
+            ${{ steps.build_zip.outputs.zip_path }}
+            release/${{ steps.parse_tag.outputs.synth }}/screenshots/*
           draft: false
           prerelease: false
         env:
