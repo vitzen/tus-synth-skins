@@ -55,10 +55,10 @@ If you like this work, you can support the developer:
 
 **Vitalii Zenkov (KYOTO)** — full-stack developer and musician.
 
-- <img src="https://cdn.simpleicons.org/github/FFFFFF" width="16" alt=""/> [GitHub: @vitzen](https://github.com/vitzen)
-- <img src="https://cdn.simpleicons.org/telegram/FFFFFF" width="16" alt=""/> [Telegram: @kyotosound](https://t.me/kyotosound)
-- <img src="https://cdn.simpleicons.org/facebook/FFFFFF" width="16" alt=""/> [Facebook: kyotosound](https://www.facebook.com/kyotosound/)
-- <img src="https://cdn.simpleicons.org/soundcloud/FFFFFF" width="16" alt=""/> [SoundCloud: kyotosound](https://soundcloud.com/kyotosound)
-- <img src="https://cdn.simpleicons.org/mixcloud/FFFFFF" width="16" alt=""/> [Mixcloud: kyotosound](https://www.mixcloud.com/kyotosound/)
-- <img src="https://cdn.simpleicons.org/youtube/FFFFFF" width="16" alt=""/> [YouTube: @vitalii_kyoto](https://www.youtube.com/@vitalii_kyoto)
-- <img src="https://cdn.simpleicons.org/gmail/FFFFFF" width="16" alt=""/> [Email: kyotochillout@gmail.com](mailto:kyotochillout@gmail.com)
+- <img src="https://cdn.simpleicons.org/github/FFFFFF" width="16" alt=""/> https://github.com/vitzen
+- <img src="https://cdn.simpleicons.org/telegram/FFFFFF" width="16" alt=""/> https://t.me/kyotosound
+- <img src="https://cdn.simpleicons.org/facebook/FFFFFF" width="16" alt=""/> https://www.facebook.com/kyotosound/
+- <img src="https://cdn.simpleicons.org/soundcloud/FFFFFF" width="16" alt=""/> https://soundcloud.com/kyotosound
+- <img src="https://cdn.simpleicons.org/mixcloud/FFFFFF" width="16" alt=""/> https://www.mixcloud.com/kyotosound/
+- <img src="https://cdn.simpleicons.org/youtube/FFFFFF" width="16" alt=""/> https://www.youtube.com/@vitalii_kyoto
+- <img src="https://cdn.simpleicons.org/gmail/FFFFFF" width="16" alt=""/> kyotochillout@gmail.com
