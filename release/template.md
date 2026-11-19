@@ -1,24 +1,24 @@
-# Simpless for {SYNTH} v{VERSION}
+# Simpless for {SYNTH} v{VERSION} / Simpless для {SYNTH} v{VERSION}
 
-## Что нового
-- Первый релиз скина Simpless для {SYNTH}
-- Чистый, минималистичный дизайн в стиле Simpless
-- Полная совместимость с дефолтным интерфейсом
+## What's New / Что нового
+- First release of Simpless skin for {SYNTH} / Первый релиз скина Simpless для {SYNTH}
+- Clean, minimal redesign in Simpless style / Чистый, минималистичный дизайн в стиле Simpless
+- Full compatibility with default interface / Полная совместимость с дефолтным интерфейсом
 
-## Установка
-1. Скачайте `Simpless-{SYNTH}-{VERSION}.zip`
-2. Распакуйте — получится папка **Simpless/**
-3. Положите её в директорию скинов {SYNTH}:
+## Installation / Установка
+1. Download `Simpless-{SYNTH}-{VERSION}.zip` / Скачайте `Simpless-{SYNTH}-{VERSION}.zip`
+2. Unzip — you get folder **Simpless/** / Распакуйте — получится папка **Simpless/**
+3. Place it in {SYNTH} skins directory / Положите в директорию скинов {SYNTH}:
    - Windows: `%APPDATA%\{SYNTH}\skins\`
    - macOS: `~/Library/Application Support/{SYNTH}/skins/`
-4. В меню скинов выберите **Simpless**
+4. Select **Simpless** in skin menu / В меню скинов выберите **Simpless**
 
-## Скриншоты
-<!-- Скриншоты добавятся автоматически из release/{synth}/screenshots/ -->
+## Screenshots / Скриншоты
+<!-- Screenshots added automatically from release/{synth}/screenshots/ / Скриншоты добавятся автоматически из release/{synth}/screenshots/ -->
 
-## Известные проблемы
+## Known Issues / Известные проблемы
 - —
 
-## Благодарности
-- Шрифт Gabarito (SIL OFL)
-- Inpired by: Tatsu Ishikawa, xtB Orange skin
+## Credits / Благодарности
+- Gabarito font (SIL OFL) / Шрифт Gabarito (SIL OFL)
+- Inspired by: Tatsu Ishikawa, xtB Orange skin / Вдохновлено: Tatsu Ishikawa, xtB Orange skin
