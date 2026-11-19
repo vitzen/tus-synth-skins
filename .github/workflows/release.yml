@@ -66,6 +66,19 @@ jobs:
             echo "_No release notes provided._" >> /tmp/release_body.md
           fi
 
+      - name: Resize screenshots
+        id: resize_screenshots
+        run: |
+          SYNTH="${{ steps.parse_tag.outputs.synth }}"
+          SCREENSHOT_DIR="release/${SYNTH}/screenshots"
+          if [[ -d "$SCREENSHOT_DIR" ]]; then
+            for file in "$SCREENSHOT_DIR"/*; do
+              [[ -f "$file" ]] || continue
+              convert "$file" -resize 1280x "$file"
+              echo "Resized: $(basename "$file")"
+            done
+          fi
+
       - name: Embed screenshots into release body
         id: embed_screenshots
         run: |
