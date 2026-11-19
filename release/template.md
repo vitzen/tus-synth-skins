@@ -23,7 +23,7 @@
 - Gabarito font (SIL OFL)
 - Inspired by: Tatsu Ishikawa, xtB Orange skin
 
----
+***
 
 # Simpless для {SYNTH} v{VERSION}
 
