@@ -86,17 +86,13 @@ jobs:
               print("No screenshots found")
               exit(0)
 
-          # Build HTML table with 2 images per row
-          rows = []
-          for i in range(0, len(files), 2):
-              row_files = files[i:i+2]
-              cells = []
-              for name in row_files:
-                  url = f"https://github.com/{repo}/blob/{sha}/{screenshot_dir}/{name}?raw=true"
-                  cells.append(f'<td align="center" style="border: 0; padding: 8px;"><img src="{url}" alt="{name}" width="500" /></td>')
-              rows.append("<tr>" + "".join(cells) + "</tr>")
+          # Build HTML images inline (horizontal, no borders)
+          tags = []
+          for name in files:
+              url = f"https://github.com/{repo}/blob/{sha}/{screenshot_dir}/{name}?raw=true"
+              tags.append(f'<img src="{url}" alt="{name}" width="500" />')
 
-          img_md = '<table style="border-collapse: collapse; border: 0;">\n' + "\n".join(rows) + "\n</table>"
+          img_md = " ".join(tags)
 
           with open('/tmp/release_body.md') as f:
               body = f.read()
