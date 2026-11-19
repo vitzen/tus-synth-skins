@@ -1,9 +1,5 @@
 # Simpless — Skins for Modular Synthesizers
 
-[![GitHub Release](https://img.shields.io/github/v/pitez/tus-synth-skins?label=release)](https://github.com/vitzen/tus-synth-skins/releases)
-[![GitHub Actions](https://img.shields.io/github/actions/workflow/status/vitzen/tus-synth-skins/release.yml)](https://github.com/vitzen/tus-synth-skins/actions)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/vitzen/tus-synth-skins/blob/main/LICENSE)
-
 ---
 
 **Simples** is a minimal skin for modular synthesizers in the **The Usual Suspects** (Xenia and others) style.
