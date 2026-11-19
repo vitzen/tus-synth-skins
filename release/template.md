@@ -9,8 +9,8 @@
 1. Download `Simpless-{SYNTH}-{VERSION}.zip`
 2. Unzip — you get folder **Simpless/**
 3. Place it in {SYNTH} skins directory:
-   - Windows: `%APPDATA%\{SYNTH}\skins\`
-   - macOS: `~/Library/Application Support/{SYNTH}/skins/`
+   - Windows: `%APPDATA%\The Usual Suspects\{SYNTH}\skins\`
+   - macOS: `~/Library/Application Support/The Usual Suspects/{SYNTH}/skins/`
 4. Select **Simpless** in skin menu
 
 ## Screenshots
@@ -38,8 +38,8 @@
 1. Скачайте `Simpless-{SYNTH}-{VERSION}.zip`
 2. Распакуйте — получится папка **Simpless/**
 3. Положите в директорию скинов {SYNTH}:
-   - Windows: `%APPDATA%\{SYNTH}\skins\`
-   - macOS: `~/Library/Application Support/{SYNTH}/skins/`
+   - Windows: `%APPDATA%\The Usual Suspects\{SYNTH}\skins\`
+   - macOS: `~/Library/Application Support/The Usual Suspects/{SYNTH}/skins/`
 4. В меню скинов выберите **Simpless**
 
 ## Скриншоты
