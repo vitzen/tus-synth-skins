@@ -1,4 +1,4 @@
-# Simpless — Skins for The Ususal Suspects VST Synthesizers
+# Simpless — Skins for The Usual Suspects VST Synthesizers
 
 ---
 
@@ -49,6 +49,14 @@ If you like this work, you can support the developer:
 
 [![GitHub Sponsor](https://img.shields.io/badge/Support%20via%20GitHub%20Sponsor-%231DA1F2?logo=github-sponsors)](https://github.com/sponsors/vitzen)
 
+or 
+
+BTC: bc1q7vavzfhsqxs4xpefnp8423hzss9520d8lv5nus
+ETH: 0xd773f4eefd7FcBF25F535649a59224D7a224b7D7
+USDT: TDBK3sUnFhv3erLCofLzfus8TGETj3DUk2
+USDC: 0xd773f4eefd7FcBF25F535649a59224D7a224b7D7
+SOL: 95NaxDxWU6VQhChjq7sAxZsUECuejmkxpCsm6bZkuJ2x
+
 ---
 
 ## 👤 Author
@@ -62,3 +70,11 @@ If you like this work, you can support the developer:
 - <img src="https://cdn.simpleicons.org/mixcloud/325CFF" width="16" alt=""/> https://www.mixcloud.com/kyotosound/
 - <img src="https://cdn.simpleicons.org/youtube/FF0000" width="16" alt=""/> https://www.youtube.com/@vitalii_kyoto
 - <img src="https://cdn.simpleicons.org/gmail/D93025" width="16" alt=""/> kyotochillout@gmail.com
+
+---
+
+## 🚧 In Development
+
+A **Simpless** skin for the **Vavra** synthesizer is currently in progress. Stay tuned!
+
+  
