@@ -75,7 +75,6 @@ jobs:
           body_path: /tmp/release_body.md
           files: |
             ${{ steps.build_zip.outputs.zip_path }}
-            release/${{ steps.parse_tag.outputs.synth }}/screenshots/*
           draft: false
           prerelease: false
         env:
