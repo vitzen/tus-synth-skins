@@ -55,10 +55,10 @@ If you like this work, you can support the developer:
 
 **Vitalii Zenkov (KYOTO)** — full-stack developer and musician.
 
-- [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](https://github.com/vitzen)
-- [![Telegram](https://img.shields.io/badge/Telegram-%230088cc.svg?logo=telegram&logoColor=white)](https://t.me/kyotosound)
-- [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=facebook&logoColor=white)](https://www.facebook.com/kyotosound/)
-- [![SoundCloud](https://img.shields.io/badge/SoundCloud-%23FF5500.svg?logo=soundcloud&logoColor=white)](https://soundcloud.com/kyotosound)
-- [![Mixcloud](https://img.shields.io/badge/Mixcloud-%23325CFF.svg?logo=mixcloud&logoColor=white)](https://www.mixcloud.com/kyotosound/)
-- [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=youtube&logoColor=white)](https://www.youtube.com/@vitalii_kyoto)
-- [![Email](https://img.shields.io/badge/Email-%23EA4335.svg?logo=gmail&logoColor=white)](mailto:kyotochillout@gmail.com)
+- <img src="https://cdn.simpleicons.org/github/FFFFFF" width="16" alt=""/> [GitHub: @vitzen](https://github.com/vitzen)
+- <img src="https://cdn.simpleicons.org/telegram/FFFFFF" width="16" alt=""/> [Telegram: @kyotosound](https://t.me/kyotosound)
+- <img src="https://cdn.simpleicons.org/facebook/FFFFFF" width="16" alt=""/> [Facebook: kyotosound](https://www.facebook.com/kyotosound/)
+- <img src="https://cdn.simpleicons.org/soundcloud/FFFFFF" width="16" alt=""/> [SoundCloud: kyotosound](https://soundcloud.com/kyotosound)
+- <img src="https://cdn.simpleicons.org/mixcloud/FFFFFF" width="16" alt=""/> [Mixcloud: kyotosound](https://www.mixcloud.com/kyotosound/)
+- <img src="https://cdn.simpleicons.org/youtube/FFFFFF" width="16" alt=""/> [YouTube: @vitalii_kyoto](https://www.youtube.com/@vitalii_kyoto)
+- <img src="https://cdn.simpleicons.org/gmail/FFFFFF" width="16" alt=""/> [Email: kyotochillout@gmail.com](mailto:kyotochillout@gmail.com)
