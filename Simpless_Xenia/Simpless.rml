@@ -55,8 +55,8 @@
 		<button id="PartLedSmall" class="jucePos juceButton led" isToggle="0" style="left: 3140.35dp; top: 343.172dp; width: 32dp; height: 32dp;"/>
 		<button id="PartButtonSmall" class="jucePos juceButton simp_button_small" isToggle="1" style="left: 3236.85dp; top: 380.172dp; width: 64dp; height: 64dp;"/>
 		<button id="PartLedSmall" class="jucePos juceButton led" isToggle="0" style="left: 3252.85dp; top: 343.172dp; width: 32dp; height: 32dp;"/>
-		<button id="MultiModeButton" class="jucePos juceButton simp_button" isToggle="1" style="left: 2158dp; top: 322.17dp; width: 128dp; height: 128dp;"/>
-		<button id="MultiModeLED" class="jucePos juceButton led" isToggle="0" style="left: 2258dp; top: 318.17dp; width: 32dp; height: 32dp;"/>
+		<button id="MultiModeButton" class="jucePos juceButton simp_button" isToggle="1" style="left: 2188dp; top: 322.17dp; width: 128dp; height: 128dp;"/>
+		<button id="MultiModeLED" class="jucePos juceButton led" isToggle="0" style="left: 2288dp; top: 318.17dp; width: 32dp; height: 32dp;"/>
 		<button id="SaveButton" class="jucePos juceButton simp_button" isToggle="0" style="left: 2188dp; top: 74dp; width: 128dp; height: 128dp;"/>
 		<button id="patchPrev" class="jucePos juceButton simp_button_red_minus" isToggle="0" style="left: 1877.3dp; top: 364dp; width: 128dp; height: 128dp;"/>
 		<button id="patchNext" class="jucePos juceButton simp_button_red_plus" isToggle="0" style="left: 1962.3dp; top: 286dp; width: 128dp; height: 128dp;"/>
